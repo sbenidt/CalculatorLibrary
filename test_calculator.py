@@ -15,3 +15,6 @@ class TestCalculator:
 
     def test_multiplication(self):
         assert 100 == calculator.multiply(10, 10)
+
+    def test_division(self, tol=1e-16):
+        assert abs(calculator.division(2, 4) - 0.5) < tol
