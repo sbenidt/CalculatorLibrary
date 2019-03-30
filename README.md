@@ -1,7 +1,3 @@
 # CalculatorLibrary
 
-Code from playing around with the following Continuous Integration tutorial
-
-https://realpython.com/python-continuous-integration/
-
-This repo used CircleCI as its continuous integration service
+Code from playing around with various unittest libraries and coverage report`
