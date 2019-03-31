@@ -2,19 +2,23 @@
 Unit tests for the calculator library
 """
 
-import calculator
+import calculator as calc
 
+import unittest
 
-class TestCalculator:
+class TestCalculator(unittest.TestCase):
 
-    def test_addtion(self):
-        assert 4 == calculator.add(2, 2)
+    def test_addition(self):
+        self.assertEqual(calc.add(1, 3), 4)
 
     def test_subtraction(self):
-        assert 2 == calculator.subtract(4, 2)
+        self.assertEqual(calc.sub(5, 2), 3)
 
     def test_multiplication(self):
-        assert 100 == calculator.multiply(10, 10)
+        self.assertEqual(calc.mult(2, 3), 6)
 
-    def test_division(self, tol=1e-16):
-        assert abs(calculator.division(2, 4) - 0.5) < tol
+    def test_division(self):
+        self.assertEqual(calc.div(6, 2), 3)
+
+if __name__ == '__main__':
+    unittest.main()

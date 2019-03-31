@@ -7,13 +7,13 @@ def add(first_term, second_term):
     return first_term + second_term
 
 
-def subtract(first_term, second_term):
+def sub(first_term, second_term):
     return first_term - second_term
 
 
-def multiply(first_term, second_term):
+def mult(first_term, second_term):
     return first_term*second_term
 
 
-def division(first_term, second_term):
+def div(first_term, second_term):
     return first_term/second_term
