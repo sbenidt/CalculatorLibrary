@@ -17,8 +17,3 @@ def mult(first_term, second_term):
 
 def div(first_term, second_term):
     return first_term/second_term
-
-
-
-
-
